@@ -1,0 +1,10 @@
+<div>
+    <h4>{{job['title']}}</h4>
+    <p style="font-size: 14px; font-weight: bold;">{{job['location']}}</p>
+    {% if 'salary' in job %}
+    <p style="font-size: 12px; font-weight: normal;"> Salary: {{job['salary']}}</p>
+    {% else %}
+    <p style="font-size: 12px; font-weight: normal;"> Salary: Not Specified</p>
+    {% endif %}
+    <p>{{job['description']}}</p>
+</div>
